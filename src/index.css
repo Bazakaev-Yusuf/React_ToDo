@@ -1,0 +1,103 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   font-weight: 500;
+   font-family: 'Aleo', serif;
+   background-color: #F4F6F8;
+}
+.app{
+   margin: auto;
+   width: 800px;
+   height: 100vh;
+   text-align: center;
+}
+header{
+   padding-top: 50px;
+   margin-bottom: 20px;
+}
+h1{
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 700;
+   position: relative;
+   left: 0;
+   top: 0;
+}
+h1::after{
+   content: '';
+   height: 3px;
+   background-color: #f2efef;
+   width: 50%;
+   transform: translate(-50%,-50%);
+   position: absolute;
+   bottom: -10px;
+   left: 50%;
+}
+form{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: auto;
+   padding: 30px 0;
+   width: 400px;
+   gap: 20px;
+}
+input{
+   width: 360px;
+   border: none;
+   font-size: 16px;
+   padding: 10px 30px;
+   background-color: #F4F6F8;;
+}
+input:focus{
+   outline: none;
+}
+
+button{
+   display: block;
+   border: none;
+   width: 25px;
+   height: 25px;
+   border-radius: 50%;
+   background-repeat: no-repeat;
+   background-size: contain;
+   cursor: pointer;
+   transition: all 0.3s;
+   background-color: #223;
+}
+button:hover{
+   transform: scale(1.1);
+   transition: all 0.3s;
+}
+.btn-add{
+   background-image: url(../src/static/img/button-images/add-img.png);
+}
+.btn-remove{
+   background-image: url(../src/static/img/button-images/remove-img.png);
+}
+.btn-complited{
+   background-image: url(../src/static/img/button-images/complite-img.png);
+}
+.btn-block{
+   display: flex;
+   justify-content: space-between;
+   width: 70px;
+}
+.todo-item{
+   display: flex;
+   width: 400px;
+   justify-content: space-between;
+   align-items: center;
+   margin: 15px auto;
+}
+.complited{
+   color: rgb(35, 145, 35);
+   text-decoration: line-through;
+}
+.item-text{
+   font-size: 16px;
+   font-weight: 500;
+   width: 320px;
+   text-align: left;   
+}
